@@ -1,0 +1,23 @@
+@mixin box($base-color:red, $border-type: solid, $border-width: 1px) {
+    border: $border-width $border-type $base-color;
+    @if $border-width > 5px {
+        border-width: 5px
+    } @else {
+        border-width: 5px;
+    }
+}
+
+div {
+    @include box;
+    margin-bottom: 5%;
+}
+
+div2 {
+    @include box(green, dotted, 20px);
+    // width powyżej 5px, ale i tak bierze pod uwagę założenie
+    height: 100px;
+    color: blue;
+    background-color: yellow;
+    font-size: larger;
+    font-weight: 600;
+}

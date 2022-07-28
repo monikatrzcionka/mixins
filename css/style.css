@@ -1,0 +1,17 @@
+div {
+  border: 1px solid red;
+  border-width: 5px;
+  margin-bottom: 5%;
+}
+
+div2 {
+  border: 20px dotted green;
+  border-width: 5px;
+  height: 100px;
+  color: blue;
+  background-color: yellow;
+  font-size: larger;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
